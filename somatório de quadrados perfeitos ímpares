@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main () {
+    printf("digite um numero: ");
+    unsigned long long i, N, resultado = 0;
+    scanf("%llu", &N);
+    for(i = 1; i <= N; i++) {
+        if(i % 2 == 1) {
+            resultado += i * i;
+        }
+    }
+    printf("O somatorio de todos os quadros perfeitos impares eh: %llu\n", resultado);
+    return 0;
+}
